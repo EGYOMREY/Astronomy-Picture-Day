@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { ApolloClient } from "apollo-client";
 import { RestLink } from "apollo-link-rest";
 import { InMemoryCache } from "apollo-cache-inmemory";
@@ -16,7 +16,7 @@ const client = new ApolloClient({
   })
 });
 
-const App = () => (
+const App: React.FC = () => (
   <ApolloProvider client={client}>
     <Picture />
   </ApolloProvider>
