@@ -2,7 +2,7 @@ import * as React from "react";
 import { ApolloClient } from "apollo-client";
 import { RestLink } from "apollo-link-rest";
 import { InMemoryCache } from "apollo-cache-inmemory";
-import Picture from "./components/Picture";
+import Picture from "./components/Picture/Picture";
 import { ApolloProvider } from "@apollo/react-hooks";
 
 const restLink = new RestLink({
